@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Language } from '../types';
 
@@ -66,8 +67,11 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t }) => {
     <>
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-6'}`}>
         <div className="flex justify-center w-full">
-          <div className={`
-            glass-panel flex justify-between items-center px-8 py-5 transition-all duration-300
+          <motion.div
+            layout
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            className={`
+            glass-panel flex justify-between items-center px-8 py-5 transition-colors duration-300
             ${scrolled ? 'w-[95%] md:w-[90%] bg-black/80 backdrop-blur-xl border-white/10 rounded-full shadow-2xl' : 'w-[90%] md:w-auto bg-black/40 backdrop-blur-lg border-white/5 rounded-full'}
           `}>
             {/* Logo */}
@@ -77,9 +81,9 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t }) => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-10 text-white/90">
+              <NavLink to="/" label={t.nav.home} />
               <NavLink to="/story" label={t.nav.history} />
               <NavLink to="/menu" label={t.nav.menu} />
-              <NavLink to="/#chef" label={t.nav.chef} isHash />
               <NavLink to="/#reservation" label={t.nav.book} isHash />
             </div>
 
@@ -104,7 +108,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t }) => {
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
               </button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </nav>
 

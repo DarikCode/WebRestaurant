@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Reveal } from '../../../components/Reveal';
 import { Translations } from '../../../types';
 
@@ -30,7 +31,10 @@ const MenuHeader: React.FC<MenuHeaderProps> = ({ t, categories, activeCategory, 
           >
             {cat === 'all' ? 'All' : t.nav[cat as keyof typeof t.nav]}
             {activeCategory === cat && (
-              <div className="absolute bottom-0 left-0 w-full h-[3px] bg-qazan-gold" />
+              <motion.div
+                layoutId="activeTab"
+                className="absolute bottom-0 left-0 w-full h-[3px] bg-qazan-gold"
+              />
             )}
           </button>
         ))}
