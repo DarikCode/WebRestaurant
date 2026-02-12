@@ -46,7 +46,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ t }) => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-[60] font-sans">
+    <div className="fixed bottom-6 right-6 z-60 font-sans">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -59,7 +59,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ t }) => {
             style={{ maxHeight: '600px', height: 'auto' }}
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-qazan-ruby to-rose-900 p-4 flex justify-between items-center text-white">
+            <div className="bg-linear-to-r from-qazan-ruby to-rose-900 p-4 flex justify-between items-center text-white">
               <div className="flex items-center gap-2">
                  {view !== 'main' && (
                      <button onClick={() => setView('main')} className="hover:bg-white/20 p-1 rounded-full transition-colors">
@@ -89,7 +89,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ t }) => {
                         >
                             {/* Bot Message */}
                             <div className="flex gap-3 mb-6">
-                                <div className="w-8 h-8 rounded-full bg-qazan-gold flex items-center justify-center text-black font-serif font-bold flex-shrink-0">
+                                <div className="w-8 h-8 rounded-full bg-qazan-gold flex items-center justify-center text-black font-serif font-bold shrink-0">
                                     Q
                                 </div>
                                 <div className="bg-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-gray-200 leading-relaxed">

@@ -15,11 +15,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ t, y1, scale, opacity }) => {
     <header className="relative w-full h-screen overflow-hidden flex flex-col justify-center items-center text-center px-4">
       <motion.div style={{ y: y1, scale }} className="absolute -top-[10%] left-0 w-full h-[120%] z-0">
         <img
-          src="/images/7.png"
+          src="public/images/7.webp"
           alt="Mosque Dome Architecture"
           className="w-full h-full object-cover opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#050505]"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-transparent to-qazan-dark"></div>
         <div className="absolute inset-0 bg-blue-900/10 mix-blend-overlay"></div>
       </motion.div>
 
@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ t, y1, scale, opacity }) => {
         </p>
         <h1 className="text-6xl md:text-9xl font-serif font-medium text-white mb-8 leading-none">
           {t.hero.title_main}<br />
-          <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-qazan-gold to-qazan-ruby">
+          <span className="italic text-transparent bg-clip-text bg-linear-to-r from-qazan-gold to-qazan-ruby">
             {t.hero.title_sub}
           </span>
         </h1>

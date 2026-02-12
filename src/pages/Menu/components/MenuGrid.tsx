@@ -33,7 +33,7 @@ const MenuGrid: React.FC<MenuGridProps> = ({ activeCategory, filteredItems }) =>
 
             {/* Drink Card */}
             {activeCategory === 'drinks' && (
-              <div className="w-full p-12 rounded-[2rem] border border-white/5 bg-white/5 hover:bg-white/10 transition-colors mb-6 flex-grow flex flex-col justify-center items-center text-center aspect-square shadow-xl">
+              <div className="w-full p-12 rounded-4xl border border-white/5 bg-white/5 hover:bg-white/10 transition-colors mb-6 grow flex flex-col justify-center items-center text-center aspect-square shadow-xl">
                 <div className="w-20 h-20 rounded-full bg-qazan-ruby/20 flex items-center justify-center text-qazan-ruby mb-8">
                   <span className="font-serif italic text-3xl">{item.title.charAt(0)}</span>
                 </div>
@@ -57,7 +57,7 @@ const MenuGrid: React.FC<MenuGridProps> = ({ activeCategory, filteredItems }) =>
                   </div>
                   <span className="text-qazan-ruby font-serif text-3xl">{item.price}</span>
                 </div>
-                <div className="w-16 h-[1px] bg-white/10 mx-auto md:mx-0 mb-6"></div>
+                <div className="w-16 h-px bg-white/10 mx-auto md:mx-0 mb-6"></div>
                 <p className="text-gray-300 font-light text-xl leading-relaxed">{item.description}</p>
               </div>
             )}

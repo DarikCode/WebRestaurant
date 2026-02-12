@@ -35,7 +35,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ t }) => {
                 {/* Main Image */}
                 <div className="overflow-hidden rounded-[3rem] border border-white/10 shadow-2xl relative">
                   <img
-                    src="/images/9.jpg"
+                    src="public/images/9.webp"
                     alt="Interior"
                     className="w-full h-[400px] md:h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                   />
@@ -82,7 +82,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ t }) => {
 
                 <h2 className="text-4xl md:text-6xl font-serif text-white mb-8 leading-[1.1]">
                   {t.about.title_main} <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">{t.about.title_sub}</span> <br />
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-white to-white/40">{t.about.title_sub}</span> <br />
                   <span className="italic text-qazan-ruby font-medium">{t.about.title_end}</span>
                 </h2>
 

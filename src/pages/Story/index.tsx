@@ -21,7 +21,7 @@ const Story: React.FC<StoryProps> = ({ t }) => {
 
             {/* Decorative Divider */}
             <div className="w-full flex justify-center py-12 opacity-30">
-                <div className="h-px w-1/2 bg-gradient-to-r from-transparent via-white to-transparent"></div>
+                <div className="h-px w-1/2 bg-linear-to-r from-transparent via-white to-transparent"></div>
             </div>
 
             <FusionSection t={t} />

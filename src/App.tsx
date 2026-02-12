@@ -29,11 +29,11 @@ const App: React.FC = () => {
         
         {/* Global Ambient Effects */}
         <div className="fixed inset-0 pointer-events-none z-0 bg-pattern-overlay opacity-10"></div>
-        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-radial-gradient from-qazan-ruby/10 to-transparent blur-[120px] pointer-events-none z-0 animate-pulse duration-[10000ms]"></div>
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-radial-gradient from-qazan-ruby/10 to-transparent blur-[120px] pointer-events-none z-0 animate-pulse duration-10000"></div>
         
         <Navbar lang={lang} setLang={setLang} t={t} />
         
-        <main className="flex-grow z-10">
+        <main className="grow z-10">
           <Routes>
             <Route path="/" element={<Home t={t} />} />
             <Route path="/menu" element={<Menu t={t} />} />
@@ -63,7 +63,7 @@ const CookieBanner = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-[#0a0a0a] border-t border-white/10 p-4 z-[100] flex flex-col md:flex-row justify-between items-center gap-4 shadow-[0_-10px_40px_rgba(0,0,0,0.8)] animate-in slide-in-from-bottom duration-500">
+    <div className="fixed bottom-0 left-0 w-full bg-qazan-black border-t border-white/10 p-4 z-100 flex flex-col md:flex-row justify-between items-center gap-4 shadow-[0_-10px_40px_rgba(0,0,0,0.8)] animate-in slide-in-from-bottom duration-500">
       <p className="text-xs text-gray-400 text-center md:text-left">
         We use cookies to ensure you get the best experience.
       </p>

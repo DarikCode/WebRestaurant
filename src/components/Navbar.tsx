@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t }) => {
         className={`transition-colors duration-300 font-serif uppercase tracking-[0.15em] text-sm md:text-xs lg:text-sm relative group ${isActive ? 'text-qazan-gold' : 'hover:text-qazan-ruby'}`}
       >
         {label}
-        <span className={`absolute -bottom-2 left-0 w-full h-[1px] bg-qazan-gold transform transition-transform duration-300 ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-50'}`}></span>
+        <span className={`absolute -bottom-2 left-0 w-full h-px bg-qazan-gold transform transition-transform duration-300 ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-50'}`}></span>
       </Link>
     );
   };
