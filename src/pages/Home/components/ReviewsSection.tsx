@@ -24,7 +24,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ t }) => {
             <Reveal key={review.id} delay={i * 0.1} fullHeight>
               <div className="glass-panel p-10 rounded-3xl border border-white/5 bg-white/5 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 h-full flex flex-col">
                 <div className="text-qazan-gold mb-8"><Quote size={40} className="opacity-50" /></div>
-                <p className="text-gray-200 font-light italic mb-10 leading-relaxed text-lg flex-grow">
+                <p className="text-gray-200 font-light italic mb-10 leading-relaxed text-lg grow">
                   "{review.text}"
                 </p>
                 <div className="flex items-center gap-5 border-t border-white/10 pt-8">

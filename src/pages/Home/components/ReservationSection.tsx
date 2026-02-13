@@ -128,7 +128,7 @@ const ReservationSection: React.FC<ReservationSectionProps> = ({ t }) => {
                       required
                       min={today}
                       onChange={() => errors.date && setErrors(prev => ({ ...prev, date: undefined }))}
-                      className={`w-full bg-transparent border-b py-4 text-white text-lg focus:outline-none transition-colors color-white text-center ${errors.date ? 'border-red-500' : 'border-white/20 focus:border-qazan-ruby'}`}
+                      className={`w-full bg-transparent border-b py-4 text-white text-lg focus:outline-none transition-colors color-white ${errors.date ? 'border-red-500' : 'border-white/20 focus:border-qazan-ruby'}`}
                     />
                     {errors.date && <p className="absolute -bottom-6 left-0 w-full text-red-400 text-xs text-center">{errors.date}</p>}
                   </div>
