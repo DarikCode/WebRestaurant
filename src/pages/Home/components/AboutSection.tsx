@@ -35,7 +35,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ t }) => {
                 {/* Main Image */}
                 <div className="overflow-hidden rounded-[3rem] border border-white/10 shadow-2xl relative">
                   <img
-                    src="public/images/9.webp"
+                    src="/images/9.webp"
                     alt="Interior"
                     className="w-full h-[400px] md:h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                   />
@@ -45,23 +45,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({ t }) => {
                 {/* Repeating Text - "COOL" element */}
                 <div className="absolute -left-6 md:-left-10 top-1/4 -rotate-90 origin-center text-white/10 text-6xl md:text-8xl font-serif whitespace-nowrap pointer-events-none select-none mix-blend-overlay">
                   HERITAGE FLAVORS
-                </div>
-
-                {/* Floating Rotating Badge */}
-                <div className="absolute -bottom-10 -right-4 md:-bottom-16 md:-right-16 z-30 w-32 h-32 md:w-48 md:h-48 pointer-events-none block">
-                  <div className="relative w-full h-full animate-[spin_12s_linear_infinite] bg-black rounded-full border border-qazan-gold/30 p-2">
-                    <svg viewBox="0 0 100 100" className="w-full h-full">
-                      <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
-                      <text className="text-[12px] font-bold uppercase tracking-[0.25em] fill-qazan-gold">
-                        <textPath href="#circlePath" startOffset="50%" textAnchor="middle">
-                          • Est. 2024 • Taste of Heritage •
-                        </textPath>
-                      </text>
-                    </svg>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Star size={24} className="text-qazan-ruby fill-current" />
-                    </div>
-                  </div>
                 </div>
               </div>
             </Reveal>

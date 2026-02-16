@@ -15,7 +15,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ t, y1, scale, opacity }) => {
     <header className="relative w-full h-screen overflow-hidden flex flex-col justify-center items-center text-center px-4">
       <motion.div style={{ y: y1, scale }} className="absolute -top-[10%] left-0 w-full h-[120%] z-0">
         <img
-          src="public/images/7.webp"
+          src="/images/7.webp"
           alt="Mosque Dome Architecture"
           className="w-full h-full object-cover opacity-60"
         />

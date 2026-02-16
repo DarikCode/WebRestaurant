@@ -38,7 +38,7 @@ const ChefSection: React.FC<ChefSectionProps> = ({ t }) => {
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-6 border border-qazan-gold/30 rounded-full animate-[spin_12s_linear_infinite]"></div>
-              <img src="public/images/chef.webp" alt="Chef" className="w-full h-[500px] md:h-[600px] object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700 filter contrast-125" />
+              <img src="/images/chef.webp" alt="Chef" className="w-full h-[500px] md:h-[600px] object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700 filter contrast-125" />
             </div>
           </Reveal>
         </div>
